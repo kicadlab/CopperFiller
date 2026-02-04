@@ -1,0 +1,171 @@
+[build-system]
+requires = [
+  "hatchling>=1.18",
+  "hatch-kicad",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "CopperFiller"
+dynamic = ["version"]
+description = "Fill empty spaces with copper pattern on active layer."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["KiCad", "copper", "filler", "layer"]
+authors = [{ name = "kicadlab", email = "kicadlab@gmail.com" }]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Manufacturing",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+  "Topic :: Utilities",
+]
+dependencies = [
+    "shapely>=2.1.2",
+    "psutil>=7.2.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kicadlab/CopperFiller"
+"Bug Tracker" = "https://github.com/kicadlab/CopperFiller/issues"
+
+[project.scripts]
+plugin-cli = "plugin.__main__:app"
+
+[tool.hatch.version]
+path = "plugin/version.py"
+
+[tool.hatch.envs.default]
+system-packages = true # for `pcbnew` module
+dependencies = [
+  "pytest",
+  "shapely",
+]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+[tool.hatch.build.targets.kicad-package]
+name = "Copper Filler"
+description = "Fill empty spaces with copper pattern on active layer"
+description_full = [
+  "This plugin automatically fills empty areas of a printed circuit board with non-conductive copper elements to reduce etchant consumption in serial production and maintain uniform board thickness on inner layers.\nThe plugin sets technological constraints according to the board class, but electrical insulation requirements and conductor parameters must be configured separately through Net Classes in accordance with design rules.\n\nNote: All versions tested on Windows 10/11, Debian 13, and Kubuntu 24.\n",
+  "Visit project homepage to learn more.",
+]
+# plugin identifier, remember to change!
+identifier = "com.github.kicadlab.CopperFillerPlugin"
+author = { name = "kicadlab", web="https://kicadlab.org" }
+status = "stable"
+kicad_version = "9.0"
+sources = ["plugin"]
+include = [
+  "plugin/*.py",
+  "plugin/ui/*.py",
+  "plugin/data/images/*.png",
+  "plugin/data/json/*.json",
+  "plugin/core/*.py",
+  "plugin/ui/locales/en/LC_MESSAGES/copper_filler.*",
+  "plugin/ui/locales/ru/LC_MESSAGES/copper_filler.*",
+]
+include_dependencies = true
+icon = "resources/icon.png"
+# hosted on GitHub pages, remember to change username and project name!
+download_url = "https://kicadlab.github.io/CopperFiller/{zip_name}"
+
+[tool.hatch.build.targets.kicad-package.hooks.kicad-repository]
+use_defaults = true
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = [
+  "black>=23.1.0",
+  "mypy>=1.0.0",
+  "ruff>=0.0.243",
+]
+[tool.hatch.envs.lint.scripts]
+typing = "mypy --install-types --non-interactive {args:src tests}"
+style = [
+  "ruff {args:.}",
+  "black --check --diff {args:.}",
+]
+fmt = [
+  "black {args:.}",
+  "ruff --fix {args:.}",
+  "style",
+]
+all = [
+  "style",
+  "typing",
+]
+
+[tool.black]
+target-version = ["py38"]
+line-length = 88
+
+[tool.ruff]
+target-version = "py38"
+line-length = 88
+select = [
+  "A",
+  "ARG",
+  "B",
+  "C",
+  "DTZ",
+  "E",
+  "EM",
+  "F",
+  "FBT",
+  "I",
+  "ICN",
+  "ISC",
+  "N",
+  "PLC",
+  "PLE",
+  "PLR",
+  "PLW",
+  "Q",
+  "RUF",
+  "S",
+  "T",
+  "TID",
+  "UP",
+  "W",
+  "YTT",
+]
+ignore = [
+  # Allow non-abstract empty methods in abstract base classes
+  "B027",
+  # Allow boolean positional values in function calls, like `dict.get(... True)`
+  "FBT003",
+  # Ignore checks for possible passwords
+  "S105", "S106", "S107",
+  # Ignore complexity
+  "C901", "PLR0911", "PLR0912", "PLR0913", "PLR0915",
+]
+unfixable = [
+  # Don't touch unused imports
+  "F401",
+]
+
+[tool.ruff.per-file-ignores]
+"plugin/template_plugin_action.py" = [
+  "N802", # Ignore function names not in lowercase
+]
+"plugin/__main__.py" = [
+  "T201", # Let us do simple prints in main
+]
+# Tests can use magic values, assertions, and relative imports
+"tests/**/*" = ["PLR2004", "S101", "TID252"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s"
+log_cli_date_format = "%H:%M:%S"

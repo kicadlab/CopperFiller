@@ -1,0 +1,425 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-27 18:42+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1251\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: copper_filler_action.py:42
+msgid "START PLUGIN COPPER FILLER"
+msgstr "НАЧАЛО ВЫПОЛНЕНИЯ PLUGIN COPPER FILLER"
+
+#: copper_filler_action.py:44
+msgid "Get board classes"
+msgstr "Загрузка классов плат"
+
+#: copper_filler_action.py:50
+msgid "Board: {board}"
+msgstr "Плата: {board}"
+
+#: copper_filler_action.py:63
+msgid "Show setting dialog"
+msgstr "Отображение диалога настроек"
+
+#: copper_filler_action.py:77
+msgid "User cancelled operation!"
+msgstr "Пользователь отменил операцию"
+
+#: copper_filler_action.py:85
+msgid "Settings are saved in {settings_file}"
+msgstr "Настройки сохранены в {settings_file}"
+
+#: copper_filler_action.py:87
+msgid "Error while saving settings: {e}"
+msgstr "Ошибка при сохранении настроек: {e}"
+
+#: copper_filler_action.py:107
+msgid ""
+"\n"
+"                                Filler Settings:\n"
+"                                \tLayer: {layer_name}\n"
+"                                \tShape: {shape}\n"
+"                                \tSize: {size} µm\n"
+"                                \tDensity: {density} %\n"
+"                                \tClearance: {clearance} µm\n"
+"                                \tOffset X: {offset_x} µm\n"
+"                                \tOffset Y: {offset_y} µm\n"
+"                                "
+msgstr ""
+"\n"
+"                                Параметры заполнения:\n"
+"                                \tСлой: {layer_name}\n"
+"                                \tФорма: {shape}\n"
+"                                \tРазмер: {size} µм\n"
+"                                \tDensity: {density} %\n"
+"                                \tClearance: {clearance} µм\n"
+"                                \tOffset X: {offset_x} µм\n"
+"                                \tOffset Y: {offset_y} µм\n"
+"                                "
+
+#: copper_filler_action.py:131
+msgid "Get Edge_Cuts..."
+msgstr "Обработка контуров Edge_Cuts..."
+
+#: copper_filler_action.py:137
+msgid "Get Edge_Cuts: {edge_time:.3f} sec"
+msgstr "Получение контуров Edge_Cuts: {edge_time:.3f} сек"
+
+#: copper_filler_action.py:142
+msgid "Get zones..."
+msgstr "Обработка зон..."
+
+#: copper_filler_action.py:146
+msgid "Get zones: {zones_time:.3f} sec"
+msgstr "Получение зон: {zones_time:.3f} сек"
+
+#: copper_filler_action.py:148
+msgid "Get masks..."
+msgstr "Обработка масок пайки..."
+
+#: copper_filler_action.py:152
+msgid "Get masks: {masks_time:.3f} sec"
+msgstr "Получение масок: {masks_time:.3f} сек"
+
+#: copper_filler_action.py:154
+msgid "Get tracks..."
+msgstr "Обработка дорожек..."
+
+#: copper_filler_action.py:158
+msgid "Get tracks: {tracks_time:.3f} sec"
+msgstr "Получение дорожек: {tracks_time:.3f} сек"
+
+#: copper_filler_action.py:160
+msgid "Get pads..."
+msgstr "Обработка площадок..."
+
+#: copper_filler_action.py:164
+msgid "Get pads: {pads_time:.3f} sec"
+msgstr "Получение площадок: {pads_time:.3f} сек"
+
+#: copper_filler_action.py:166
+msgid "Get vias..."
+msgstr "Обработка переходов..."
+
+#: copper_filler_action.py:170
+msgid "Get vias: {vias_time:.3f} sec"
+msgstr "Получение переходов: {vias_time:.3f} сек"
+
+#: copper_filler_action.py:199
+msgid "Board size: {board_width:.1f} x {board_height:.1f} µm"
+msgstr "Размеры платы: {board_width:.1f} x {board_height:.1f} µм"
+
+#: copper_filler_action.py:200
+msgid "Element size: {element_diam} µm, step: {step:.3f} µm"
+msgstr "Размер элемента: {element_diam} µм, шаг: {step:.3f} µм"
+
+#: copper_filler_action.py:203
+msgid "START MAIN LOOP"
+msgstr "НАЧИНАЕМ ОСНОВНОЙ ЦИКЛ ЗАПОЛНЕНИЯ"
+
+#: copper_filler_action.py:211
+msgid "Proccessing Threads Count: {num_threads}"
+msgstr "Используем {num_threads} потоков для обработки"
+
+#: copper_filler_action.py:213
+msgid "Check pre-count shapes..."
+msgstr "Расчет количества фигур..."
+
+#: copper_filler_action.py:215
+msgid "Pre-count shape: {total_estimated_shapes}"
+msgstr "Оценочное количество фигур: {total_estimated_shapes}"
+
+#: copper_filler_action.py:239
+msgid "Fill copper... Section {completed_sections}/{num_threads}"
+msgstr "Заполнение меди... Секция {completed_sections}/{num_threads}"
+
+#: copper_filler_action.py:245
+msgid "Start copper filling..."
+msgstr "Начало заполнения меди..."
+
+#: copper_filler_action.py:277
+msgid "Section {section_id} ends: {total_shapes} elements, {clipped_shapes} added"
+msgstr "Секция {section_id} завершена: {total_shapes} фигур, {clipped_shapes} добавлено"
+
+#: copper_filler_action.py:283
+msgid "Error while processing: {e}"
+msgstr "Ошибка в обработке секции: {e}"
+
+#: copper_filler_action.py:287
+msgid "Add shapes to zones..."
+msgstr "Добавление фигур в зону..."
+
+#: copper_filler_action.py:292
+msgid "MAIN LOOP ENDED"
+msgstr "ОСНОВНОЙ ЦИКЛ ЗАПОЛНЕНИЯ ЗАВЕРШЕН"
+
+#: copper_filler_action.py:293
+msgid "Main loop time: {fill_loop_time:.3f} sec"
+msgstr "Время основного цикла: {fill_loop_time:.3f} сек"
+
+#: copper_filler_action.py:294
+msgid "Total shapes: {total_shapes}"
+msgstr "Всего фигур создано: {total_shapes}"
+
+#: copper_filler_action.py:295
+msgid "Clipped shapes: {clipped_shapes}"
+msgstr "Фигур добавлено в зону: {clipped_shapes}"
+
+#: copper_filler_action.py:296
+msgid "Shape creation time: {shape_creation_time:.3f} sec"
+msgstr "Время создания фигур: {shape_creation_time:.3f} сек"
+
+#: copper_filler_action.py:298
+msgid "Average clipper total time: {clipper_total_time:.3f} sec"
+msgstr "Среднее время клиппинга в потоке: {clipper_total_time:.3f} сек"
+
+#: copper_filler_action.py:299
+msgid "Average time to element: {a:.2f} msec"
+msgstr "Среднее время на фигуру: {a:.2f} мс"
+
+#: copper_filler_action.py:300
+msgid "Added element persentage: {a:.1f}%"
+msgstr "Процент добавленных фигур: {a:.1f}%"
+
+#: copper_filler_action.py:303
+msgid "End zone..."
+msgstr "Финализация зоны..."
+
+#: copper_filler_action.py:309
+msgid "Add and fill zones: {fill_time:.3f} sec"
+msgstr "Добавление и заполнение зоны: {fill_time:.3f} сек"
+
+#: copper_filler_action.py:316
+msgid "TOTAL INFORMATION"
+msgstr "ИТОГОВЫЙ ОТЧЕТ О ПРОИЗВОДИТЕЛЬНОСТИ"
+
+#: copper_filler_action.py:317
+msgid "Total time: {total_time:.3f} sec"
+msgstr "Общее время выполнения: {total_time:.3f} сек"
+
+#: copper_filler_action.py:318
+msgid "Preproccessing time: {t:.3f} sec ({a:.1f}%)"
+msgstr "Подготовительные операции: {t:.3f} сек ({a:.1f}%)"
+
+#: copper_filler_action.py:321
+msgid "Main loop time: {fill_loop_time:.3f} sec ({a:.1f}%)"
+msgstr "Основной цикл заполнения: {fill_loop_time:.3f} сек ({a:.1f}%)"
+
+#: copper_filler_action.py:325
+msgid "Zone fill: {fill_time:.3f} sec ({a:.1f}%)"
+msgstr "Заполнение зоны: {fill_time:.3f} сек ({a:.1f}%)"
+
+#: copper_filler_action.py:329
+msgid ""
+"\n"
+"                    Preprocessing details:\n"
+"                    \tEdge contours: {edge_time:.3f} sec\n"
+"                    \tZones: {zones_time:.3f} sec\n"
+"                    \tMasks: {masks_time:.3f} sec\n"
+"                    \tTracks: {tracks_time:.3f} sec\n"
+"                    \tPads: {pads_time:.3f} sec\n"
+"                    \tVias: {vias_time:.3f} sec\n"
+"                "
+msgstr ""
+"\n"
+"                    Детализация подготовительных операций:\n"
+"                    \tКонтуры: {edge_time:.3f} сек\n"
+"                    \tЗоны: {zones_time:.3f} сек\n"
+"                    \tМаски: {masks_time:.3f} сек\n"
+"                    \tДорожки: {tracks_time:.3f} сек\n"
+"                    \tПлощадки: {pads_time:.3f} сек\n"
+"                    \tПереходы: {vias_time:.3f} сек\n"
+"                "
+
+#: copper_filler_action.py:347
+msgid "END PLUGIN"
+msgstr "ВЫПОЛНЕНИЕ ЗАВЕРШЕНО"
+
+#: copper_filler_action.py:350
+msgid "End!"
+msgstr "Завершено!"
+
+#: copper_filler_action.py:359
+msgid "Operation cancelled by user: {e}"
+msgstr "Операция отменена пользователем: {e}"
+
+#: copper_filler_action.py:361
+msgid "Operation cancelled by user"
+msgstr "Операция отменена пользователем"
+
+#: copper_filler_action.py:363 copper_filler_action.py:365
+msgid "Critical error: {e}"
+msgstr "Критическая ошибка: {e}"
+
+#: core/preprocessing.py:59
+msgid "Get Zones"
+msgstr "Получение зон"
+
+#: core/preprocessing.py:74
+msgid "Zone count: {zones_count}, removed: {removed_zones}"
+msgstr "Обработано зон: {zones_count}, удалено: {removed_zones}"
+
+#: core/preprocessing.py:79
+msgid "Get Masks"
+msgstr "Получение масок"
+
+#: core/preprocessing.py:94
+msgid "Masks count: {masks_count}"
+msgstr "Количество масок: {masks_count}"
+
+#: core/preprocessing.py:99
+msgid "Get Tracks"
+msgstr "Получение дорожек"
+
+#: core/preprocessing.py:122
+msgid "Tracks count: {tracks_count}"
+msgstr "Количество дорожек: {tracks_count}"
+
+#: core/preprocessing.py:127
+msgid "Get Pads"
+msgstr "Получение площадок"
+
+#: core/preprocessing.py:141
+msgid "Pads count: {pads_count}"
+msgstr "Количество площадок: {pads_count}"
+
+#: core/preprocessing.py:157
+msgid "Get Vias"
+msgstr "Получение переходов"
+
+#: core/preprocessing.py:185
+msgid "Vias count: {vias_count}"
+msgstr "Количество переходов: {vias_count}"
+
+#: ui/action_dialog.py:22
+msgid "Settings CopperFiller"
+msgstr "Настройки CopperFiller"
+
+#: ui/action_dialog.py:42
+msgid "Layer"
+msgstr "Слой"
+
+#: ui/action_dialog.py:56
+msgid "Element"
+msgstr "Элемент"
+
+#: ui/action_dialog.py:58
+msgid "Shape:"
+msgstr "Форма:"
+
+#: ui/action_dialog.py:63
+msgid "Circle"
+msgstr "Круг"
+
+#: ui/action_dialog.py:63
+msgid "Square"
+msgstr "Квадрат"
+
+#: ui/action_dialog.py:71
+msgid "Size:"
+msgstr "Размер:"
+
+#: ui/action_dialog.py:83
+msgid "Geometry"
+msgstr "Геометрия"
+
+#: ui/action_dialog.py:87
+msgid "Density:"
+msgstr "Плотность:"
+
+#: ui/action_dialog.py:103
+msgid "Offset X:"
+msgstr "Отступ X:"
+
+#: ui/action_dialog.py:115
+msgid "Offset Y:"
+msgstr "Отступ Y:"
+
+#: ui/action_dialog.py:130
+msgid "Class"
+msgstr "Класс"
+
+#: ui/action_dialog.py:132
+msgid "Class {i}"
+msgstr "Класс {i}"
+
+#: ui/action_dialog.py:140
+msgid "Clearance:"
+msgstr "Зазор:"
+
+#: ui/action_dialog.py:156
+msgid "Check the table Electrical Spacing in Calculator Tools while entering clearance value"
+msgstr "При вводе значения зазора проверьте в соответствии с таблицей Электрический зазор"
+
+#: ui/action_dialog.py:166
+msgid "Save Settings?"
+msgstr "Сохранить настройки?"
+
+#: ui/info_dialog.py:8
+msgid "Total Information"
+msgstr "Общая информация"
+
+#: ui/info_dialog.py:18
+msgid ""
+"Filler ends!\n"
+"Total time: {total_time:.1f} sec\n"
+"Created shapes: {shapes}\n"
+"Added: {clipped}\n"
+"\n"
+"Details in log file."
+msgstr ""
+"Плагин завершил работу!\n"
+"Общее время: {total_time:.1f} sec\n"
+"Создано элементов: {shapes}\n"
+"Добавлено: {clipped}\n"
+"\n"
+"Подробности в лог файле."
+
+#: ui/info_dialog.py:30
+msgid "Logs"
+msgstr "Логи"
+
+#: ui/info_dialog.py:49
+msgid "Not found logs directory"
+msgstr "Не найдена директория с логами"
+
+#: ui/info_dialog.py:49 ui/info_dialog.py:60
+msgid "Error"
+msgstr "Ошибка"
+
+#: ui/info_dialog.py:60
+msgid "Not open logs directory"
+msgstr "Невозможно открыть директорию с логами"
+
+#: ui/missing_lib_dialog.py:13
+msgid "Installation Error"
+msgstr "Ошибка установки"
+
+#: ui/missing_lib_dialog.py:22
+msgid ""
+"Some python library not found!\n"
+"\n"
+"Please follow the installation guide at the link below. Until you finish the installation no CopperFiller functions will be available. After finishing the installation, please restart KiCAD."
+msgstr ""
+"Некоторые библиотеки не найдены!\n"
+"\n"
+"Пожалуйста, пройдите по ссылке ниже для выполнения предварительной установки. Пока Вы не завершите установку функции плагина CopperFiller не будут доступны. После установки перезагрузите KiCAD."
+
+#: ui/missing_lib_dialog.py:31
+msgid "Guide"
+msgstr "Гайд"
+
+#: ui/missing_lib_dialog.py:34
+msgid "OK"
+msgstr "ОК"
+

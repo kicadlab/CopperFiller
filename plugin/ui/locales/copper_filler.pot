@@ -1,0 +1,393 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-27 18:42+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1251\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: copper_filler_action.py:42
+msgid "START PLUGIN COPPER FILLER"
+msgstr ""
+
+#: copper_filler_action.py:44
+msgid "Get board classes"
+msgstr ""
+
+#: copper_filler_action.py:50
+msgid "Board: {board}"
+msgstr ""
+
+#: copper_filler_action.py:63
+msgid "Show setting dialog"
+msgstr ""
+
+#: copper_filler_action.py:77
+msgid "User cancelled operation!"
+msgstr ""
+
+#: copper_filler_action.py:85
+msgid "Settings are saved in {settings_file}"
+msgstr ""
+
+#: copper_filler_action.py:87
+msgid "Error while saving settings: {e}"
+msgstr ""
+
+#: copper_filler_action.py:107
+msgid ""
+"\n"
+"                                Filler Settings:\n"
+"                                \tLayer: {layer_name}\n"
+"                                \tShape: {shape}\n"
+"                                \tSize: {size} ��\n"
+"                                \tDensity: {density} %\n"
+"                                \tClearance: {clearance} ��\n"
+"                                \tOffset X: {offset_x} ��\n"
+"                                \tOffset Y: {offset_y} ��\n"
+"                                "
+msgstr ""
+
+#: copper_filler_action.py:131
+msgid "Get Edge_Cuts..."
+msgstr ""
+
+#: copper_filler_action.py:137
+msgid "Get Edge_Cuts: {edge_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:142
+msgid "Get zones..."
+msgstr ""
+
+#: copper_filler_action.py:146
+msgid "Get zones: {zones_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:148
+msgid "Get masks..."
+msgstr ""
+
+#: copper_filler_action.py:152
+msgid "Get masks: {masks_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:154
+msgid "Get tracks..."
+msgstr ""
+
+#: copper_filler_action.py:158
+msgid "Get tracks: {tracks_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:160
+msgid "Get pads..."
+msgstr ""
+
+#: copper_filler_action.py:164
+msgid "Get pads: {pads_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:166
+msgid "Get vias..."
+msgstr ""
+
+#: copper_filler_action.py:170
+msgid "Get vias: {vias_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:199
+msgid "Board size: {board_width:.1f} x {board_height:.1f} �m"
+msgstr ""
+
+#: copper_filler_action.py:200
+msgid "Element size: {element_diam} �m, step: {step:.3f} �m"
+msgstr ""
+
+#: copper_filler_action.py:203
+msgid "START MAIN LOOP"
+msgstr ""
+
+#: copper_filler_action.py:211
+msgid "Proccessing Threads Count: {num_threads}"
+msgstr ""
+
+#: copper_filler_action.py:215
+msgid "Pre-count shape: {total_estimated_shapes}"
+msgstr ""
+
+#: copper_filler_action.py:239
+msgid "Fill copper... Section {completed_sections}/{num_threads}"
+msgstr ""
+
+#: copper_filler_action.py:245
+msgid "Start copper filling..."
+msgstr ""
+
+#: copper_filler_action.py:277
+msgid "Section {section_id} ends: {total_shapes} elements, {clipped_shapes} added"
+msgstr ""
+
+#: copper_filler_action.py:283
+msgid "Error while processing: {e}"
+msgstr ""
+
+#: copper_filler_action.py:287
+msgid "Add shapes to zones..."
+msgstr ""
+
+#: copper_filler_action.py:292
+msgid "MAIN LOOP ENDED"
+msgstr ""
+
+#: copper_filler_action.py:293
+msgid "Main loop time: {fill_loop_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:294
+msgid "Total shapes: {total_shapes}"
+msgstr ""
+
+#: copper_filler_action.py:295
+msgid "Clipped shapes: {clipped_shapes}"
+msgstr ""
+
+#: copper_filler_action.py:296
+msgid "Shape creation time: {shape_creation_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:298
+msgid "Average clipper total time: {clipper_total_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:299
+msgid "Average time to element: {a:.2f} msec"
+msgstr ""
+
+#: copper_filler_action.py:300
+msgid "Added element persentage: {a:.1f}%"
+msgstr ""
+
+#: copper_filler_action.py:303
+msgid "End zone..."
+msgstr ""
+
+#: copper_filler_action.py:309
+msgid "Add and fill zones: {fill_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:316
+msgid "TOTAL INFORMATION"
+msgstr ""
+
+#: copper_filler_action.py:317
+msgid "Total time: {total_time:.3f} sec"
+msgstr ""
+
+#: copper_filler_action.py:318
+msgid "Preproccessing time: {t:.3f} sec ({a:.1f}%)"
+msgstr ""
+
+#: copper_filler_action.py:321
+msgid "Main loop time: {fill_loop_time:.3f} sec ({a:.1f}%)"
+msgstr ""
+
+#: copper_filler_action.py:325
+msgid "Zone fill: {fill_time:.3f} sec ({a:.1f}%)"
+msgstr ""
+
+#: copper_filler_action.py:329
+msgid ""
+"\n"
+"                    Preprocessing details:\n"
+"                    \tEdge contours: {edge_time:.3f} sec\n"
+"                    \tZones: {zones_time:.3f} sec\n"
+"                    \tMasks: {masks_time:.3f} sec\n"
+"                    \tTracks: {tracks_time:.3f} sec\n"
+"                    \tPads: {pads_time:.3f} sec\n"
+"                    \tVias: {vias_time:.3f} sec\n"
+"                "
+msgstr ""
+
+#: copper_filler_action.py:347
+msgid "END PLUGIN"
+msgstr ""
+
+#: copper_filler_action.py:350
+msgid "End!"
+msgstr ""
+
+#: copper_filler_action.py:359
+msgid "Operation cancelled by user: {e}"
+msgstr ""
+
+#: copper_filler_action.py:361
+msgid "Operation cancelled by user"
+msgstr ""
+
+#: copper_filler_action.py:363 copper_filler_action.py:365
+msgid "Critical error: {e}"
+msgstr ""
+
+#: core/preprocessing.py:59
+msgid "Get Zones"
+msgstr ""
+
+#: core/preprocessing.py:74
+msgid "Zone count: {zones_count}, removed: {removed_zones})"
+msgstr ""
+
+#: core/preprocessing.py:79
+msgid "Get Masks"
+msgstr ""
+
+#: core/preprocessing.py:94
+msgid "Masks count: {masks_count}"
+msgstr ""
+
+#: core/preprocessing.py:99
+msgid "Get Tracks"
+msgstr ""
+
+#: core/preprocessing.py:122
+msgid "tracks count: {tracks_count}"
+msgstr ""
+
+#: core/preprocessing.py:127
+msgid "Get Pads"
+msgstr ""
+
+#: core/preprocessing.py:141
+msgid "Pads count: {pads_count}"
+msgstr ""
+
+#: core/preprocessing.py:157
+msgid "Get Vias"
+msgstr ""
+
+#: core/preprocessing.py:185
+msgid "Vias count: {vias_count}"
+msgstr ""
+
+#: ui/action_dialog.py:22
+msgid "Settings CopperFiller"
+msgstr ""
+
+#: ui/action_dialog.py:42
+msgid "Layer"
+msgstr ""
+
+#: ui/action_dialog.py:44
+msgid " "
+msgstr ""
+
+#: ui/action_dialog.py:56
+msgid "Element"
+msgstr ""
+
+#: ui/action_dialog.py:58
+msgid "Shape:"
+msgstr ""
+
+#: ui/action_dialog.py:63
+msgid "Circle"
+msgstr ""
+
+#: ui/action_dialog.py:63
+msgid "Square"
+msgstr ""
+
+#: ui/action_dialog.py:71
+msgid "Size:"
+msgstr ""
+
+#: ui/action_dialog.py:83
+msgid "Geometry"
+msgstr ""
+
+#: ui/action_dialog.py:87
+msgid "Density:"
+msgstr ""
+
+#: ui/action_dialog.py:103
+msgid "Offset X:"
+msgstr ""
+
+#: ui/action_dialog.py:115
+msgid "Offset Y:"
+msgstr ""
+
+#: ui/action_dialog.py:130
+msgid "Class"
+msgstr ""
+
+#: ui/action_dialog.py:132
+msgid "Class {i}"
+msgstr ""
+
+#: ui/action_dialog.py:140
+msgid "Clearance:"
+msgstr ""
+
+#: ui/action_dialog.py:155
+msgid "Save Settings?"
+msgstr ""
+
+#: ui/info_dialog.py:8
+msgid "Total Information"
+msgstr ""
+
+#: ui/info_dialog.py:18
+msgid ""
+"Filler ends!\n"
+"Total time: {total_time:.1f} sec\n"
+"Created shapes: {shapes}\n"
+"Added: {clipped}\n"
+"\n"
+"Details in log file."
+msgstr ""
+
+#: ui/info_dialog.py:30
+msgid "Logs"
+msgstr ""
+
+#: ui/info_dialog.py:49
+msgid "Not found logs directory"
+msgstr ""
+
+#: ui/info_dialog.py:49 ui/info_dialog.py:60
+msgid "Error"
+msgstr ""
+
+#: ui/info_dialog.py:60
+msgid "Not open logs directory"
+msgstr ""
+
+#: ui/missing_lib_dialog.py:13
+msgid "Installation Error"
+msgstr ""
+
+#: ui/missing_lib_dialog.py:22
+msgid ""
+"Some python library not found!\n"
+"\n"
+"Please follow the installation guide at the link below. Until you finish the installation no CopperFiller functions will be available. After finishing the installation, please restart KiCAD."
+msgstr ""
+
+#: ui/missing_lib_dialog.py:31
+msgid "Guide"
+msgstr ""
+
+#: ui/missing_lib_dialog.py:34
+msgid "OK"
+msgstr ""
+
